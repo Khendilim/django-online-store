@@ -16,7 +16,7 @@ spec:
     spec:
       initContainers:
         - name: db-prepare
-          image: kennyrimba/django-online-store:latest  # Use the same image as your main container
+          image: khendilim/django-online-store:latest  # Use the same image as your main container
           command: 
           - sh
           - -c
@@ -48,7 +48,7 @@ spec:
                 key: password
       containers:
       - name: django-web
-        image: kennyrimba/django-online-store:latest  # Replace with your actual image
+        image: khendilim/django-online-store:latest  # Replace with your actual image
         command: 
         - sh
         - -c
